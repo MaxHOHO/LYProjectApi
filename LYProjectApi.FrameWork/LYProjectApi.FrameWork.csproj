@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="LYProjectApi.FrameWork.Entity\LYProjectApi.FrameWork.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LYProjectApi.FrameWork.cs</LastGenOutput>
+    </None>
+    <None Update="LYProjectApi.FrameWork.IRepository\LYProjectApi.FrameWork.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LYProjectApi.FrameWork.IRepository.cs</LastGenOutput>
+    </None>
+    <None Update="LYProjectApi.FrameWork.IServices\LYProjectApi.FrameWork.IServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LYProjectApi.FrameWork.IServices.cs</LastGenOutput>
+    </None>
+    <None Update="LYProjectApi.FrameWork.Repository\LYProjectApi.FrameWork.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LYProjectApi.FrameWork.Repository.cs</LastGenOutput>
+    </None>
+    <None Update="LYProjectApi.FrameWork.Services\LYProjectApi.FrameWork.Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LYProjectApi.FrameWork.Services.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="LYProjectApi.FrameWork.IRepository\LYProjectApi.FrameWork.IRepository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LYProjectApi.FrameWork.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="LYProjectApi.FrameWork.IServices\LYProjectApi.FrameWork.IServices.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LYProjectApi.FrameWork.IServices.tt</DependentUpon>
+    </Compile>
+    <Compile Update="LYProjectApi.FrameWork.Repository\LYProjectApi.FrameWork.Repository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LYProjectApi.FrameWork.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="LYProjectApi.FrameWork.Services\LYProjectApi.FrameWork.Services.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LYProjectApi.FrameWork.Services.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

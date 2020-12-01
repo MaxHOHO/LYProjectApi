@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>..\LYProjectApi.Api\bin\Debug\</OutputPath>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>..\LYProjectApi\bin\Release\</OutputPath>
+	</PropertyGroup>
+	 
+
+	<ItemGroup>
+		<ProjectReference Include="..\LYProjectApi.IServices\LYProjectApi.IServices.csproj" />
+		<ProjectReference Include="..\LYProjectApi.Repository\LYProjectApi.Repository.csproj" />
+	</ItemGroup>
+
+</Project>
